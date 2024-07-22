@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Voting from "./components/Voting";
+import Results from "./components/Results";
+import Winner from "./components/Winner";
+import AuditLog from "./components/AuditLog";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Voting Blockchain System</h1>
+      <Voting />
+      <Results />
+      <Winner />
+      <AuditLog />
     </div>
   );
-}
+};
 
 export default App;
